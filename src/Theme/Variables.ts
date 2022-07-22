@@ -27,7 +27,8 @@ export const Colors: ThemeColors = {
     background: '#EDF4FA',
     text: '#143057',
     white: '#ffffff',
-    basicShadow: '#1A3252',
+    basicShadow: '#1A32529A',
+    inputText: '#143057',
 }
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {

@@ -3,12 +3,16 @@ import Metrics from '@/Theme/Metrics'
 import { Colors } from '@/Theme/Variables'
 import Fonts from '@/Theme/FontsTypes'
 
-export default StyleSheet.create({
+const styles = StyleSheet.create({
     input: {
+        fontFamily: Fonts.type.light,
         height: Metrics.buttonHeight,
         backgroundColor: Colors.white,
         paddingLeft: 20,
         borderRadius: Metrics.buttonRadius,
+        color: Colors.inputText,
+        shadowColor: Colors.basicShadow,
+        elevation: 15,
     },
     contentContainer: {
         width: Metrics.widthPercentageToDP('100%'),
@@ -64,6 +68,7 @@ export default StyleSheet.create({
         color: Colors.text,
         opacity: 0.4,
         marginBottom: 10,
+        marginLeft: 5,
     },
     forgetPasswordContainer: {
         paddingLeft: 11,
@@ -86,3 +91,5 @@ export default StyleSheet.create({
         opacity: 0.7,
     },
 })
+
+export default styles

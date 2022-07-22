@@ -5,7 +5,7 @@ const { width, height } = Dimensions.get('window')
 const Metrics = {
     paddingHorizontal: 15,
     marginHorizontal: 15,
-    buttonHeight: 55,
+    buttonHeight: 61,
     buttonRadius: 10,
     screenWidth: width,
     screenHeight: height,
