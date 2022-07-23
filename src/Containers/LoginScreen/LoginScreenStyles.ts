@@ -4,6 +4,10 @@ import { Colors } from '@/Theme/Variables'
 import Fonts from '@/Theme/FontsTypes'
 
 const styles = StyleSheet.create({
+    loginButtonText: {
+        fontFamily: Fonts.type.bold,
+        color: Colors.white,
+    },
     input: {
         fontFamily: Fonts.type.light,
         height: Metrics.buttonHeight,
