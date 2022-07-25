@@ -4,9 +4,8 @@ import { Colors } from '@/Theme/Variables'
 import Fonts from '@/Theme/FontsTypes'
 
 const styles = StyleSheet.create({
-    loginButtonText: {
-        fontFamily: Fonts.type.bold,
-        color: Colors.white,
+    loginButton: {
+        marginTop: 77,
     },
     input: {
         fontFamily: Fonts.type.light,
@@ -15,8 +14,6 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         borderRadius: Metrics.buttonRadius,
         color: Colors.inputText,
-        shadowColor: Colors.basicShadow,
-        elevation: 15,
     },
     contentContainer: {
         width: Metrics.widthPercentageToDP('100%'),

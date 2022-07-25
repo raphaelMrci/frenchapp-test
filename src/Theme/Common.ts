@@ -22,6 +22,7 @@ const Common = {
         },
         basicShadow: {
             shadowColor: Colors.basicShadow,
+            elevation: 15,
             shadowOpacity: 0.15,
             shadowOffset: { width: 0, height: 3 },
             shadowRadius: 15,

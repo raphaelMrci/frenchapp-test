@@ -12,4 +12,6 @@ const MainNavigator = () => {
     )
 }
 
+// TODO: <LoginStack.Screen name="ArticlesListScreen" />
+
 export default MainNavigator

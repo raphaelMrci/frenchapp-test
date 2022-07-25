@@ -3,9 +3,8 @@ import api from '@/Services'
 interface loginResponse {
     data: Object
 }
-
 export async function fetchLogin(params: Object): Promise<loginResponse> {
-    const response = await api.post('auth/login', params)
+    const response = await api.post('/auth/token', params)
 
     return response
 }
