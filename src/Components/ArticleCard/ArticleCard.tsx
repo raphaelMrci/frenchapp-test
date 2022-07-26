@@ -9,7 +9,7 @@ const ArticleCard = ({ image, title, date }) => {
             <Image source={image} style={styles.cardImage} />
             <Text style={styles.title}>{title}</Text>
             <View style={styles.dateContainer}>
-                <Text style={styles.date}>{date}</Text>
+                <Text style={styles.date}>Mar 2 mars 2021</Text>
             </View>
         </TouchableOpacity>
     )

@@ -28,7 +28,12 @@ const ArticlesListScreen = props => {
     return (
         <View style={[Common.basicPage]}>
             <TopBar title={t('news.news')} onArrowPressed={BackArrowPressed} />
-            <FlatList />
+            <ArticleCard
+                title="Nouveau système de réservation pour le parc"
+                image={{
+                    uri: 'https://i2.wp.com/lafabriqueverticale.com/wp-content/uploads/2019/05/recyclage-des-cordes-escalade-beal.jpg?w=720&ssl=1',
+                }}
+            />
         </View>
     )
 }

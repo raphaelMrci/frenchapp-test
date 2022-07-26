@@ -21,14 +21,15 @@ export const Colors: ThemeColors = {
     inputBackground: '#FFFFFF',
     success: '#28a745',
     error: '#dc3545',
-
     primary: '#2479C2',
     secondary: '#FFB339',
     background: '#EDF4FA',
     text: '#143057',
     white: '#ffffff',
+    black: '#000000',
     basicShadow: '#1A32529A',
     inputText: '#143057',
+    dateContainer: '#071D2F',
 }
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {
