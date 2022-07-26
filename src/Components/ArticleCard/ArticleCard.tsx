@@ -3,13 +3,13 @@ import { View, TouchableOpacity, Image, Text } from 'react-native'
 
 import styles from './ArticleCardStyles'
 
-const ArticleCard = props => {
+const ArticleCard = ({ image, title, date }) => {
     return (
         <TouchableOpacity style={styles.card}>
-            <Image source={props.image} style={styles.cardImage} />
-            <Text style={styles.title}>{props.title}</Text>
+            <Image source={image} style={styles.cardImage} />
+            <Text style={styles.title}>{title}</Text>
             <View style={styles.dateContainer}>
-                <Text style={styles.date}>{props.date}</Text>
+                <Text style={styles.date}>{date}</Text>
             </View>
         </TouchableOpacity>
     )

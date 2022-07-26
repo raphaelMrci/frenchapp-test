@@ -7,6 +7,9 @@ export default StyleSheet.create({
     card: {
 
     },
+    cardImage: {
+
+    },
     title: {
 
     },

@@ -16,7 +16,6 @@ import { login } from '@/ActionCreators/AuthActionCreator'
 import { useDispatch, useStore } from 'react-redux'
 import { LoginService } from '@/Services/Api/Authentification'
 import { useTranslation } from 'react-i18next'
-import { navigate } from '@/Navigators/Root'
 
 const LoginContentContainer = ({ dispatch, navigation }) => {
     const [email, setEmail] = useState('')

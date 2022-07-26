@@ -47,4 +47,7 @@ export default {
         notifications: 'Notifications',
         no_notifications: 'Auncune notification',
     },
+    news: {
+        news: 'Actualité',
+    },
 }
