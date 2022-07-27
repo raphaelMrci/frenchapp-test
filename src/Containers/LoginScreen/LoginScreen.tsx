@@ -24,14 +24,14 @@ const LoginContentContainer = ({ dispatch, navigation }) => {
     const { t } = useTranslation()
 
     const LoginSuccess = data => {
-        console.log(data)
+        console.log('SUCCESS: ', data)
         if (Platform.OS === 'android') {
             ToastAndroid.show('Connected', ToastAndroid.SHORT)
             setIsConnecting(false)
-            dispatch(login(email, password, DeviceInfo.getUniqueId()))
         }
-
-        navigation.push('ArticlesListScreen')
+        navigation.push('ArticlesListScreen', {
+            data,
+        })
         // TODO: Navigate to the home page
     }
 
