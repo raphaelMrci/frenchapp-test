@@ -41,15 +41,10 @@ const ArticlesListScreen = props => {
     const getData = async (token) => {
         const response = await GetArticlesList(token)
 
-        console.log('RESPONSE: ', response)
-
         setArticles(response)
     }
 
     useEffect(() => {
-        // TODO: Get the articles from the API
-        // console.log('PROPS: ', props)
-
         getData(props.route.params.data.token)
     })
 

@@ -24,7 +24,6 @@ const LoginContentContainer = ({ dispatch, navigation }) => {
     const { t } = useTranslation()
 
     const LoginSuccess = data => {
-        console.log('SUCCESS: ', data)
         if (Platform.OS === 'android') {
             ToastAndroid.show('Connected', ToastAndroid.SHORT)
             setIsConnecting(false)
