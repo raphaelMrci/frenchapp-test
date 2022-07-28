@@ -11,13 +11,11 @@ import { Common, Metrics } from '@/Theme'
 import styles from './LoginScreenStyles'
 import { TextInput } from 'react-native-gesture-handler'
 import { BasicButton } from '@/Components'
-import DeviceInfo from 'react-native-device-info'
-import { login } from '@/ActionCreators/AuthActionCreator'
-import { useDispatch, useStore } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { LoginService } from '@/Services/Api/Authentification'
 import { useTranslation } from 'react-i18next'
 
-const LoginContentContainer = ({ dispatch, navigation }) => {
+const LoginContentContainer = ({ navigation }) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [isConnecting, setIsConnecting] = useState(false)
@@ -28,10 +26,9 @@ const LoginContentContainer = ({ dispatch, navigation }) => {
             ToastAndroid.show('Connected', ToastAndroid.SHORT)
             setIsConnecting(false)
         }
-        navigation.push('ArticlesListScreen', {
+        navigation.push('NewsScreen', {
             data,
         })
-        // TODO: Navigate to the home page
     }
 
     const LoginFailed = err => {

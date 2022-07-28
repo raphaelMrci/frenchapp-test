@@ -5,9 +5,8 @@ import Fonts from '@/Theme/FontsTypes'
 
 export default StyleSheet.create({
     card: {
-        marginBottom: 20,
         width: '100%',
-        height: Metrics.screenHeight * 0.25,
+        height: Metrics.screenHeight * 0.25, // 25% of screen height
         borderRadius: Metrics.borderRadius,
         resizeMode: 'cover',
         backgroundColor: Colors.articleCard,
@@ -26,21 +25,5 @@ export default StyleSheet.create({
         fontFamily: Fonts.type.bold,
         fontSize: 20,
         width: '90%',
-    },
-    dateContainer: {
-        backgroundColor: Colors.dateContainer,
-        position: 'absolute',
-        opacity: 0.68,
-        padding: 5,
-        paddingLeft: 23,
-        paddingRight: 23,
-        borderRadius: 17,
-        top: '5%',
-        right: '3%',
-    },
-    date: {
-        color: Colors.white,
-        fontFamily: Fonts.type.bold,
-        fontSize: 12,
     },
 })

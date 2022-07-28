@@ -49,5 +49,7 @@ export default {
     },
     news: {
         news: 'Actualité',
+        article: 'Article',
+        share: 'Partager',
     },
 }

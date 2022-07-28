@@ -9,6 +9,7 @@ const Metrics = {
     buttonRadius: 10,
     screenWidth: width,
     screenHeight: height,
+    borderRadius: 10,
 
     widthPercentageToDP: (widthPercent: string) => {
         const screenWidth = Dimensions.get('window').width

@@ -13,6 +13,7 @@ export default StyleSheet.create({
         fontSize: 26,
         color: Colors.text,
         fontFamily: Fonts.type.bold,
+        textAlign: 'center',
     },
     topBar: {
         flexDirection: 'row',

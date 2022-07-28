@@ -1,27 +1,23 @@
 import React, { useEffect } from 'react'
 
-import { Text, View, TouchableOpacity, Image, FlatList } from 'react-native'
+import { View, FlatList } from 'react-native'
 import { Common } from '@/Theme'
 import { useTranslation } from 'react-i18next'
 
-import styles from './ArticlesListScreenStyles'
+import styles from './NewsScreenStyles'
 import { ArticleCard } from '@/Components'
-import TopBar from '@/Components/TopBar/TobBar'
+import { TopBar } from '@/Components'
 import { GetArticlesList } from '@/Services/Api/Articles'
-import { useStore } from 'react-redux'
 
-const ArticlesListScreen = props => {
+const NewsScreen = props => {
     const { t } = useTranslation()
     const [articles, setArticles] = React.useState([])
-
-    const store = useStore()
 
     const BackArrowPressed = () => {
         props.navigation.pop()
     }
 
-    const renderItem = ({ item, index }) => {
-
+    const renderArticle = ({ item, index }) => {
         const onPress = () => {
             props.navigation.push('ArticleScreen', {
                 article: item,
@@ -38,14 +34,14 @@ const ArticlesListScreen = props => {
         )
     }
 
-    const getData = async (token) => {
+    const getArticles = async (token: string) => {
         const response = await GetArticlesList(token)
 
         setArticles(response)
     }
 
     useEffect(() => {
-        getData(props.route.params.data.token)
+        getArticles(props.route.params.data.token)
     })
 
     return (
@@ -55,10 +51,10 @@ const ArticlesListScreen = props => {
                 style={styles.container}
                 data={articles}
                 keyExtractor={(item, index) => index.toString()}
-                renderItem={renderItem}
+                renderItem={renderArticle}
             />
         </View>
     )
 }
 
-export default ArticlesListScreen
+export default NewsScreen

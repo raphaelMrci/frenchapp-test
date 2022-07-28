@@ -1,2 +1,5 @@
 export { default as BasicButton } from './BasicButton/BasicButton'
-export {default as ArticleCard } from './ArticleCard/ArticleCard'
+export { default as ArticleCard } from './ArticleCard/ArticleCard'
+export { default as TopBar } from './TopBar/TopBar'
+export { default as ArticleHeader } from './ArticleHeader/ArticleHeader'
+export { default as ShareButton } from './ShareButton/ShareButton'

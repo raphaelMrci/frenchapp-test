@@ -1,17 +1,22 @@
 import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
-import { LoginScreen, ArticlesListScreen } from '@/Containers'
+import { CardStyleInterpolators, createStackNavigator } from '@react-navigation/stack'
+import { LoginScreen, NewsScreen, ArticleScreen } from '@/Containers'
 
 const LoginStack = createStackNavigator()
 
 const MainNavigator = () => {
     return (
-        <LoginStack.Navigator screenOptions={{ headerShown: false }}>
+        <LoginStack.Navigator
+            screenOptions={{
+                headerShown: false,
+                gestureEnabled: true,
+                gestureDirection: 'horizontal',
+                cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
+            }}
+        >
             <LoginStack.Screen name="LoginScreen" component={LoginScreen} />
-            <LoginStack.Screen
-                name="ArticlesListScreen"
-                component={ArticlesListScreen}
-            />
+            <LoginStack.Screen name="NewsScreen" component={NewsScreen} />
+            <LoginStack.Screen name="ArticleScreen" component={ArticleScreen} />
         </LoginStack.Navigator>
     )
 }

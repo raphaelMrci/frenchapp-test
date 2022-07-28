@@ -30,6 +30,7 @@ export const Colors: ThemeColors = {
     basicShadow: '#1A32529A',
     inputText: '#143057',
     dateContainer: '#071D2F',
+    articleCard: '#143057',
 }
 
 export const NavigationColors: Partial<ThemeNavigationColors> = {

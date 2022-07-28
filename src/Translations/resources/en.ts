@@ -11,5 +11,7 @@ export default {
     },
     news: {
         news: 'News',
+        article: 'Article',
+        share: 'Share',
     },
 }
