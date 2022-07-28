@@ -5,8 +5,8 @@ import Fonts from '@/Theme/FontsTypes'
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 48,
-    }
+        paddingTop: 22,
+    },
 })
 
 export default styles

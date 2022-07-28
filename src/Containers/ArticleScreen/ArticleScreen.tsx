@@ -34,7 +34,7 @@ const ArticleScreen = props => {
                     <ShareButton />
                 </View>
                 <Text style={styles.body}>{article.body}</Text>
-                <ShareButton style={styles.footerShareButton}/>
+                <ShareButton style={styles.footerShareButton} />
             </ScrollView>
         </View>
     )

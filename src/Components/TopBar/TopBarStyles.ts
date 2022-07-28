@@ -19,6 +19,7 @@ export default StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'stretch',
+        paddingBottom: 26,
     },
     right: {
         flex: 1,

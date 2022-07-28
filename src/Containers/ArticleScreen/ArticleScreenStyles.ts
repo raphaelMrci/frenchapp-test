@@ -5,7 +5,6 @@ import Fonts from '@/Theme/FontsTypes'
 
 export default StyleSheet.create({
     header: {
-        marginTop: 26,
     },
     detailsContainer: {
         width: '100%',
